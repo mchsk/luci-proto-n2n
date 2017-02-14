@@ -2,20 +2,20 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=luci-proto-n2n
 PKG_VERSION:=1.0
-PKG_RELEASE:=6
-PKG_MAINTAINER:=Jason Tse <jasontsecode@gmail.com>
+PKG_RELEASE:=7
+PKG_MAINTAINER:=Marek Sedlak <bodka.zavinac@gmail.com>
 PKG_LICENSE:=GPLv3
 PKG_LICENSE_FILES:=LICENSE
 
 include $(INCLUDE_DIR)/package.mk
 
 define Package/luci-proto-n2n
-   SECTION:=LuCI
-   CATEGORY:=Protocols
-   DEPENDS:=+n2n-edge
-   TITLE:=N2N VPN protocol support for LuCI
-   MAINTAINER:=Jason Tse <jasontsecode@gmail.com>
-   PKGARCH:=all
+  SECTION:=luci
+  CATEGORY:=LuCI
+  SUBMENU:=5. Protocols
+  TITLE:=N2N VPN protocol support for LuCI
+  DEPENDS:=+n2n-edge
+  PKGARCH:=all
 endef
 
 define Package/luci-proto-n2n/description
