@@ -13,13 +13,13 @@ define Package/luci-proto-n2n
   SECTION:=luci
   CATEGORY:=LuCI
   SUBMENU:=5. Protocols
-  TITLE:=N2N VPN protocol support for LuCI
+  TITLE:=Support for N2N VPN
   DEPENDS:=+n2n-edge
   PKGARCH:=all
 endef
 
 define Package/luci-proto-n2n/description
-N2N VPN protocol support for LuCI
+Support for N2N VPN
 endef
 
 define Package/luci-proto-n2n/install
